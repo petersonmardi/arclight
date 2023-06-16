@@ -1,0 +1,16 @@
+.main-CTA {
+    width: 227px;
+    height: 63px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px;
+    gap: 10px;
+    color: white;
+    background-color: #242DFE;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
