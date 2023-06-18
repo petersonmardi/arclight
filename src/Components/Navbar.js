@@ -28,7 +28,7 @@ function Navbar() {
             </div>
 
             <Button 
-            buttonClass='main-CTA'
+            buttonClass='mainCTA'
             text='Get started' 
             itsFree={"- it's free"}/>
 

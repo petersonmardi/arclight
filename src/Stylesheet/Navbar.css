@@ -1,10 +1,17 @@
 .header-navbar {
-    margin: 40px 130px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 40px;
+}
+
+.Logo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 24px;
 }
 
 .header-navbar--links {
@@ -14,3 +21,4 @@
     align-items: center;
     justify-content: center;
 }
+
