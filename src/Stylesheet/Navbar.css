@@ -1,10 +1,9 @@
 .header-navbar {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
+    width: 100%;
 }
 
 .Logo {
@@ -20,5 +19,38 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+
+.header-navbar--menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.show-for-mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width:1080px) {
+  .show-for-mobile {
+    display: block;
+   }
+   .hide-for-mobile {
+      display: none;
+   }
+}
+
+
+@media only screen and (max-width:768px) {
+    .show-for-mobile {
+      display: block;
+    }
+    .hide-for-mobile {
+      display: none;
+    }
 }
 

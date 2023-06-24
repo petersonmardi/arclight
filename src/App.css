@@ -10,47 +10,55 @@ html, body {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
+  background-color: #242DFE;
 }
 
-.App {
-  background-color: #242DFE;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+body {
   padding: 20px;
-
 }
 
 .header-background {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
-  width: 100%;
-  height: 820px;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   background: linear-gradient(180deg, #FFFFFF 26.1%, #F2F5FA 110.16%);
 }
 
-.header-hero-section {
+.header {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  margin-left: 130px;
-  margin-right: 130px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 130px;
+  /* border: #000 solid 1px; */
+}
+
+.header-hero-section {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+  /* border: blue solid 2px; */
+}
+
+.navbar-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* border: brown solid 1px; */
 }
 
 .header-hero {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  justify-content: center;
+  width: 100%;
+  /* border: green solid 1px; */
 }
 
 .hero-card--leftSide {
@@ -58,7 +66,7 @@ html, body {
   flex-direction: column;
   gap: 24px;
   width: 690px;
-  height: 290px;
+  /* border: yellow solid 1px; */
 }
 
 .card-leftside--title {
@@ -86,6 +94,7 @@ html, body {
   flex-direction: row;
   align-items: center;
   gap: 16px;
+  margin-top: 24px;
 }
 
 .secondCTA {
@@ -100,6 +109,7 @@ html, body {
   border-radius: 5px;
   border: none;
   font-size: 18px;
+  background-color: white;
 }
 
 .button-play--text {
@@ -130,16 +140,26 @@ html, body {
 
 .hero-map {
   display: flex;
-  flex-direction: column;
-}
-
-.header-hero--logo {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 50px;
+  /* border: mediumslateblue solid 1px; */
+}
+
+.header-hero--logo {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  /* border: magenta solid 1px; */
+}
+
+.userWrapper {
+  float: right;
+  position: absolute;
 }
 
 .user1, .user2, .user3 {
@@ -150,8 +170,7 @@ html, body {
   justify-content: center;
   background-color: white;
   border-radius: 5px;
-  float: right;
-  position: absolute;
+  position: relative;
   box-shadow: 4px 9px 95px 0px rgba(36,45,254,0.48);
   -webkit-box-shadow: 4px 9px 95px 0px rgba(36,45,254,0.48);
   -moz-box-shadow: 4px 9px 95px 0px rgba(36,45,254,0.48);
@@ -159,21 +178,65 @@ html, body {
 .user1 {
   width: 101px;
   height: 128px;
-  top: 175px;
-  right: 320px;
+  top: -50px;
+  right: -20px;
   transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
 }
 .user2 {
   width: 149px;
   height: 128px;
-  bottom: 200px;
-  right: 180px;
+  top: 105px;
+  right: -130px;
   transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
 }
 .user3 {
   width: 133px;
   height: 128px;
-  bottom: 240px;
-  right: 450px;
+  top: -50px;
+  right: 140px;
   transform: matrix(0.98, 0.21, -0.21, 0.98, 0, 0);
+}
+
+/* Tablet */
+
+@media only screen and (max-width:1280px) {
+  .header-hero {
+    flex-direction: column-reverse;
+  }
+  .header-hero-section {
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(15rem, 1fr));
+  }
+  .hero-card--leftSide {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:1080px) {
+  .header {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .header {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .header-hero {
+    flex-direction: column-reverse;
+  }
+  .hero-card--leftSide, .secondCTA {
+    width: 100%;
+  }
+  .hide {
+    display: block;
+  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width:601px) {
+ 
 }

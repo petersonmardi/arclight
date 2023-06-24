@@ -3,6 +3,7 @@ import '../Stylesheet/Navbar.css'
 import Button from './Button';
 import Logo from '../Images/Logo.svg';
 import List from './List';
+import Hamburger from '../Images/Hamburger Menu.svg';
 
 function Navbar() {
     return (
@@ -13,7 +14,8 @@ function Navbar() {
                   src={Logo} 
                   alt='Logo'/>
             </div>
-            <div className='header-navbar--links'>
+
+            <div className='header-navbar--links hide-for-mobile'>
                 <List 
                   listClass='navbar-link'
                   text='Pricing'/>
@@ -27,11 +29,18 @@ function Navbar() {
                   text='Docs'/>
             </div>
 
-            <Button 
-            buttonClass='mainCTA'
-            text='Get started' 
-            itsFree={"- it's free"}/>
+            <div className='navbar-CTA, hide-for-mobile'>
+                <Button 
+                  buttonClass='mainCTA'
+                  text='Get started' 
+                  itsFree={"- it's free"}/>
+            </div>
 
+            <div className='header-navbar--menu show-for-mobile'>
+              <img 
+                src={Hamburger}
+                alt='Hamburger' />
+            </div>
         </nav>
     )
 }

@@ -12,47 +12,51 @@ function App() {
     <div className="App">
       
       <header className='header-background'>
-
+        <div className='header'>
         <div className='header-hero-section'>
-          {/* 1 */}
+
           <div className='navbar-wrapper'>
             <Navbar />
           </div>
-          {/* 2 */}
+
           <div className='header-hero'>
 
             <div className='hero-card--leftSide'>
+                  <div className='card'>
+                    <div className='card-text'>
+                      <h1 className='card-leftside--title'>Affiliate tracking software shouldn't cost an harm and a leg.</h1>
+                      <p className='card-leftside--description'>Keep track of all your affiliate marketing campaigns in once place, 
+                      and analyze how well they are doing. Best part? It doesn’t cost an arm and a leg.</p>
+                    </div>
 
-              <h1 className='card-leftside--title'>Affiliate tracking software shouldn't cost an harm and a leg.</h1>
-              <p className='card-leftside--description'>Keep track of all your affiliate marketing campaigns in once place, 
-              and analyze how well they are doing. Best part? It doesn’t cost an arm and a leg.</p>
+                    <div className='buttonCTAs'>
+                      <Button 
+                        buttonClass='mainCTA'  
+                        text='Get started'
+                        itsFree="- it's free" />
 
-              <div className='buttonCTAs'>
-                <Button 
-                  buttonClass='mainCTA'  
-                  text='Get started'
-                  itsFree="- it's free" />
-
-                <button className='secondCTA'>
-                  <img 
-                    src={Play}
-                    alt='Play' />
-                    <div className='button-play--text'>How it works</div>
-                </button>
-              </div>
+                      <button className='secondCTA'>
+                        <img 
+                          src={Play}
+                          alt='Play' />
+                          <div className='button-play--text'>How it works</div>
+                      </button>
+                    </div>
+                  </div>
               
-              <div className='ratings'>
-                <div className='starIcon'>
-                  <StarIcon />
-                  <StarIcon />
-                  <StarIcon />
-                  <StarIcon />
-                  <StarIcon />
-                </div>
-                <span className='fiveOverFive'>5/5 ·</span>
-                <strong className='alternative'>Alternative To reviews</strong>
-              </div>
-            </div>
+          
+                  <div className='ratings'>
+                    <div className='starIcon'>
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                    </div>
+                    <span className='fiveOverFive'>5/5 ·</span>
+                    <strong className='alternative'>Alternative To reviews</strong>
+                  </div>
+          </div>
 
             <div className='hero-map'>
               <img 
@@ -82,11 +86,9 @@ function App() {
                     country='United States' />
                 </div>
               </div>
-              
             </div>
           </div>
-        </div>
-          {/* 3 */}
+        
           <div className="header-hero--logo">
             <Logo 
               logo='Shopify'
@@ -112,6 +114,8 @@ function App() {
               logo='Slack'
               brand='Slack' />
           </div>
+        </div>
+        </div>
       </header>
     </div>
   );
