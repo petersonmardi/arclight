@@ -238,5 +238,70 @@ body {
 /* Mobile */
 
 @media only screen and (max-width:601px) {
- 
+  .header {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-hero-section {
+    margin: 0 20px;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .card-leftside--title {
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    width: fit-content;
+    line-height: 37px;
+    color: #000;
+  }
+
+  .ratings {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+  }
+
+  .mapImage {
+    width: 100%;
+  }
+  .header-hero {
+    height: fit-content;
+    gap: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+  .hero-map {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    width: fit-content;
+  }
+  .user1 {
+    width: fit-content;
+    padding: 8px;
+    top: 5px;
+  }
+  .user2 {
+    width: fit-content;
+    top: 65px;
+    right: -95px;
+    padding: 8px;
+  }
+  .user3 {
+    width: fit-content;
+    padding: 8px;
+    right: 95px;
+  }
 }

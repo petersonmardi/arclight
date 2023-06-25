@@ -53,13 +53,16 @@ function App() {
                       <StarIcon />
                       <StarIcon />
                     </div>
-                    <span className='fiveOverFive'>5/5 ·</span>
-                    <strong className='alternative'>Alternative To reviews</strong>
+                    <div className='ratings-text'>
+                      <span className='fiveOverFive'>5/5 ·</span>
+                      <strong className='alternative'>Alternative To reviews</strong>
+                    </div>
                   </div>
           </div>
 
             <div className='hero-map'>
-              <img 
+              <img
+              className='mapImage'
               src={Map}
               alt='map' />
 

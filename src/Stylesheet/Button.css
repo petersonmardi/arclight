@@ -18,5 +18,12 @@
 @media only screen and (max-width: 768px) {
     .mainCTA {
         width: 100%;
+        height: fit-content;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .header {
+        margin: 20px 5px;
     }
 }
