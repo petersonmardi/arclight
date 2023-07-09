@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "title": "A powerful dashboard that tracks everything.",
+            "subtitle": "Decisions should be powered by data, and there's no better way to collect good data than our powerful dashboard.",
+            "item01": "Create and manage custom referral links.",
+            "item02": "A/B test your campaigns for more accurate results.",
+            "item03": "Track all your campaigns"
+        },
+        {
+            "title": "For Startups",
+            "subtitle": "Not all compaigns are big, startups should have just as much opportunities as established enterprises.",
+            "item01": "50% off all plans, forever.",
+            "item02": "Recieve monthly offers for and expert support to help you grow your referral program.",
+            "item03": "Access to our Founders Hub."
+        },
+        {
+            "title": "For Enterprises",
+            "subtitle": "Just because your company is huge, doesn't mean you shouldn't benefit from a referral sytem.",
+            "item01": "10% off all plans, forever.",
+            "item02": "Free consultation with our Marketing experts.",
+            "item03": "Access to our Enterprise Hub."
+        },
+        {
+            "category": "Basic",
+            "title": "$39",
+            "subtitle": "Suited for startups who just starting out.",
+            "item01": "Unlimited customers",
+            "item02": "Dashboard & reports",
+            "item03": "Live chat support",
+            "item04": "Fraud Management"
+        },
+        {
+            "category": "Starter",
+            "title": "$59",
+            "subtitle": "Suited for those experimenting with referral programs.",
+            "item01": "Migration services.",
+            "item02": "Onboarding manager",
+            "item03": "Automations features",
+            "item04": "Mass actions"
+        },
+        {
+            "category": "Pro",
+            "title": "$129",
+            "subtitle": "Suited for enterprises with established referral systems.",
+            "item01": "All previous plans plus:",
+            "item02": "Remove 'Powered by' logo",
+            "item03": "Expert 1-on-1s",
+            "item04": "Unlimited referral links"
+        }
+    ]
+}

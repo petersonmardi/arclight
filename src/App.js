@@ -6,21 +6,23 @@ import Play from './Images/Play.svg';
 import StarIcon from './Components/StarIcon';
 import Logo from './Components/Logo';
 import User from './Components/User';
+import Dashboard from './Components/Dashboard';
+import DashboardImage from './Images/Dashboard.png';
+import ForStartups from './Components/ForStartups';
+import ForEnterprises from './Components/ForEnterprises';
+import Pricing from './Components/Pricing';
+import Data from './data/business.json';
+import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      
-      <header className='header-background'>
-        <div className='header'>
+    <div className='App'>
+      <header className='background'>
         <div className='header-hero-section'>
-
-          <div className='navbar-wrapper'>
-            <Navbar />
-          </div>
-
+          
+          <Navbar />
+          
           <div className='header-hero'>
-
             <div className='hero-card--leftSide'>
                   <div className='card'>
                     <div className='card-text'>
@@ -43,8 +45,6 @@ function App() {
                       </button>
                     </div>
                   </div>
-              
-          
                   <div className='ratings'>
                     <div className='starIcon'>
                       <StarIcon />
@@ -58,15 +58,15 @@ function App() {
                       <strong className='alternative'>Alternative To reviews</strong>
                     </div>
                   </div>
-          </div>
+            </div>
 
             <div className='hero-map'>
               <img
               className='mapImage'
               src={Map}
-              alt='map' />
+              alt='Map' />
 
-              <div className='userWrapper'>
+              <div className='users'>
                 <div className='user1'>
                   <User 
                     userImage='user01'
@@ -117,9 +117,68 @@ function App() {
               logo='Slack'
               brand='Slack' />
           </div>
-        </div>
+
         </div>
       </header>
+
+      {/* Dashboard */}
+
+      <section className='powerful-dashboard--wrapper'>
+        <img
+          className='powerful-dashboard-image'
+          src={DashboardImage}
+          alt='DashboardImage' />
+
+        <div className='powerful-dashboard'>
+          <Dashboard />
+        </div>
+      </section>
+
+      <section className='background background-business'>
+        <div className='business'>
+          <div className='business-wrapper'>
+            <ForStartups />
+          </div>
+          <div className='business-wrapper'>
+            <ForEnterprises />
+          </div>
+        </div>
+        <div className='business-pricing'>
+          <Pricing
+            isMiddle={false}
+            category={Data.data[3].category}
+            title={Data.data[3].title}
+            subtitle={Data.data[3].subtitle}
+            item01={Data.data[3].item01}
+            item02={Data.data[3].item02}
+            item03={Data.data[3].item03}
+            item04={Data.data[3].item04} />
+
+          <Pricing
+            isMiddle={true}
+            category={Data.data[4].category}
+            title={Data.data[4].title}
+            subtitle={Data.data[4].subtitle}
+            item01={Data.data[4].item01}
+            item02={Data.data[4].item02}
+            item03={Data.data[4].item03}
+            item04={Data.data[4].item04} />
+          
+          <Pricing
+            isMiddle={false}
+            category={Data.data[5].category}
+            title={Data.data[5].title}
+            subtitle={Data.data[5].subtitle}
+            item01={Data.data[5].item01}
+            item02={Data.data[5].item02}
+            item03={Data.data[5].item03}
+            item04={Data.data[5].item04} />
+        </div>
+      </section>
+
+      <section>
+        <Footer />
+      </section>
     </div>
   );
 }

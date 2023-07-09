@@ -1,0 +1,26 @@
+.List-component {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: max-content;
+}
+
+.ListWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 12px;
+    list-style: none;
+    color: #e7e8fe;
+    font-size: 16px;
+    font-family: Merriweather, serif;
+}
+
+.List-title {
+    color: #fff;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Bitter, serif;
+    line-height: normal;
+}

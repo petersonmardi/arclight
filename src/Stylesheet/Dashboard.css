@@ -1,0 +1,36 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    color: #fff;
+    font-family: Merriweather, serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dashboard-title {
+  font-style: normal;
+  font-size: 36px;
+  font-family: Bitter, serif;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.dashboard-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dashboard-item {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
